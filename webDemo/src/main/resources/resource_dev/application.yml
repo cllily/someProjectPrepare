@@ -1,0 +1,20 @@
+#redis设置，给RedisProperties读取
+redis:
+  nodes: 192.168.109.20:22400,192.168.108.21:22400
+  commandTimeOut: 1000
+#  端口号
+server:
+  port: 6068
+
+#thymeleaf模板
+spring:
+  thymeleaf:
+    cache: false
+#    mode: HTML5
+#    content-type: text/html
+#    prefix: classpath:/templates/
+
+
+
+test:
+  name: zcc
