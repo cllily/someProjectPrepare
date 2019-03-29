@@ -1,0 +1,43 @@
+server:
+  port: 6067
+spring:
+  thymeleaf:
+    mode: HTML5
+    encoding: utf-8
+    content-type: text/html
+#    cache: false
+  application:
+    name: DataSourceAccountManager
+  datasource:
+    primary:
+      test-while-idle:  true    #验证连接的有效性
+      test-on-borrow: true
+      validation-query: SELECT 1 #空闲时回收
+      time-between-eviction-runs-millis:  300000     #连接池空闲连接的有效时间
+      min-evictable-idle-time-millis: 1800000
+      url: jdbc:mysql://192.168.30.19:3306/dspdb
+      driver-class-name: com.mysql.jdbc.Driver
+      username: admin
+      password: 1qaz@WSX
+    secondary:
+      test-while-idle:  true    #验证连接的有效性
+      test-on-borrow: true
+      validation-query: SELECT 1 #空闲时回收
+      time-between-eviction-runs-millis:  300000     #连接池空闲连接的有效时间
+      min-evictable-idle-time-millis: 1800000
+      url: jdbc:mysql://192.168.30.19:3306/oppdb
+      driver-class-name: com.mysql.jdbc.Driver
+      username: admin
+      password: 1qaz@WSX
+
+
+redis:
+  nodes: 192.168.30.43:22400  # 多个redis逗号“,”分隔 nodes: 192.168.19.33:22400,192.168.19.34:22400
+  commandTimeout: 5000
+
+mybatis:
+  mapperLocations: classpath:/mapper/*Mapper.xml
+  dialect: mysql
+  configuration:
+    map-underscore-to-camel-case: true
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Web/Web.iml" filepath="$PROJECT_DIR$/Web/Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZuulService/ZuulService.iml" filepath="$PROJECT_DIR$/ZuulService/ZuulService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web/cn.Web.iml" filepath="$PROJECT_DIR$/Web/cn.Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/someProjectPrepare.iml" filepath="$PROJECT_DIR$/.idea/someProjectPrepare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBootAdmin/springBootAdmin.iml" filepath="$PROJECT_DIR$/springBootAdmin/springBootAdmin.iml" />
+    </modules>
+  </component>
+</project>

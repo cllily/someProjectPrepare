@@ -1,0 +1,42 @@
+#redis设置，给RedisProperties读取
+redis:
+  nodes: 192.168.109.20:22400,192.168.108.21:22400
+  commandTimeOut: 1000
+#  端口号
+server:
+  port: 6067
+
+#thymeleaf模板
+spring:
+  thymeleaf:
+    cache: false
+#    mode: HTML5
+#    content-type: text/html
+#    prefix: classpath:/templates/
+  application:
+    name: projectName
+
+  datasource:
+    primary:
+      test-while-idle: true       #验证有效性
+      test-on-borrow: true
+      validation-query: SELECT 1   #空闲回收
+      time-between-eviction-runs-millis:  300000  #连接池空闲时间
+      min-evictable-idle-time-millis:   1800000
+      username: root
+      password: root@123
+      url: jdbc:mysql//47.107.136.43:3306/demo
+      driver-class-name: com.mysql.jdbc.Driver
+    secondary:
+      test-while-idle: true       #验证有效性
+      test-on-borrow: true
+      validation-query: SELECT 1   #空闲回收
+      time-between-eviction-runs-millis:  300000  #连接池空闲时间
+      min-evictable-idle-time-millis:   1800000
+      username: root
+      password: root@123
+      url: jdbc:mysql://47.107.136.43:3306/test
+      driver-class-name: com.mysql.jdbc.Driver
+
+test:
+  name: zcc
